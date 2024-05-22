@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to Katik</h1>
+    <p class="text">Hai Sobat, Selamat datang di Katik :] <br> 
+    Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar!</p>
+    <div class="button-container">
+        <button class="button-top">Segitiga</button>
+    </div>
+    <p class="text">Jajar Genjang</p>
+    <section class="container">
+        <div>
+            <div class="header">
+                <h2>Luas Segitiga</h2>
+            </div>
+            <div class="image">
+                <img src="assets/images.png" alt="">
+            </div>
+            <p>Rumus Luas Segitiga yaitu :</p>
+            <div class="text">
+                <p>L = 1/2 x a x t</p>
+            </div>
+            <p>Dimana : <br> 
+                L = Luas <br>
+                a = Panjang alas<br>
+                t = Tinggi </p>
+            <hr>
+            <h2 class="text">Hitung Luas Segitiga</h2>
+            <div>
+                <input type="text" id="alas" placeholder="Nilai Alas">
+                <input type="text" id="tinggi" placeholder="Nilai Tinggi">
+            </div>
+            <p id="luas-hasil"></p>
+        </div>
+    </section>
+    <section class="container">
+        <div>
+            <div class="header">
+                <h2>Keliling Segitiga</h2>
+            </div>
+            <div>
+                <img src="assets/images.png" alt="">
+            </div>
+            <p>Rumus Keliling Segitiga yaitu :</p>
+            <div class="text">
+                <p>K = S1 + S2 + S3</p>
+            </div>
+            <p>Dimana : <br>
+                K = Keliling <br>
+                S1 = Sisi A <br>
+                S2 = Sisi B<br>
+                S3 = Sisi C </p>
+            <hr>
+            <h2 class="text">Hitung Keliling Segitiga</h2>
+            <div>
+                <input type="text" id="sisi1" placeholder="Sisi A">
+                <input type="text" id="sisi2" placeholder="Sisi B">
+                <input type="text" id="sisi3" placeholder="Sisi C">
+            </div>
+            <p id="keliling-hasil"></p>
+        </div>
+        <div class="button-container">
+            <button class="button-bot" onclick="hitung()">Hitung</button>
+        </div>
+        <button class="reset" onclick="reset()">Reset</button>
+    </section>
+    <h3 class="copyright">Copyright By Muhammad Furqon Rizqi</h3>
+</body>
+</html>
